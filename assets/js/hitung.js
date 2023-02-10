@@ -20,8 +20,8 @@ function hitung() {
 
             // Anak
             if(anak == "Ya") {
-                var anakLelaki = parseInt(document.getElementById('anakLelaki').value); 
-                var anakPerempuan = document.getElementById('anakPerempuan').value;
+                var anakLelaki = IsNaN(document.getElementById('anakLelaki').value); 
+                var anakPerempuan = IsNaN(document.getElementById('anakPerempuan').value);
                 
                 // console.log(bagPasangan)
 
