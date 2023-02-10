@@ -4,7 +4,7 @@ function hitung() {
     // Jumlah Harta
     var totHarta = document.getElementById('totHarta').value.replace('Rp', '').replace(/(\..*?)/g, '');
     var kelamin = $(":radio[name=kelamin]:checked").val();
-    totHarga = isNaN (totHarta) ? 0 : totHarta
+    totHarga = isNaN(totHarta) ? 0 : totHarta
     
     // Gender
     if(kelamin == 'Lelaki') {
@@ -26,6 +26,7 @@ function hitung() {
                     // console.log(bagAnakLelaki);
                     var bagPasangan = totHarta * (1/8);
                     var bagAnakLelaki = totHarta * (7/8);
+                    bagAnakLelaki = isNaN(bagAnakLelaki) ? 0 : bagAnakLelaki
                 }
                 // Anak Perempuan (Completed)
                 else if(anakPerempuan > 0 && anakLelaki <= 0) {
