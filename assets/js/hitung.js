@@ -16,7 +16,7 @@ function hitung() {
 
             // Anak
             if(anak == "Ya") {
-                var anakLelaki = document.getElementById('anakLelaki').value; 
+                var anakLelaki = parseInt(document.getElementById('anakLelaki').value); 
                 var anakPerempuan = document.getElementById('anakPerempuan').value;
                 
                 // console.log(bagPasangan)
