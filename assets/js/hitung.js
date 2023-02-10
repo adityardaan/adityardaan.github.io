@@ -1,5 +1,9 @@
 // document.getElementById('mbah').addEventListener('mouseup', hitung);
 
+let val = NaN;
+
+val = val || 0;
+
 function hitung() {
     // Jumlah Harta
     var totHarta = parseInt(document.getElementById('totHarta').value.replace('Rp', '').replace(/(\..*?)/g, '0'));
