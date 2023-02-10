@@ -1,8 +1,8 @@
 // document.getElementById('mbah').addEventListener('mouseup', hitung);
 
-let val = NaN;
-
-val = val || 0;
+number = NaN;
+if (isNaN(number)) number = 0;
+console.log(number);
 
 function hitung() {
     // Jumlah Harta
