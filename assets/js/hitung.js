@@ -4,7 +4,7 @@ function hitung() {
     // Jumlah Harta
     var totHarta = document.getElementById('totHarta').value.replace('Rp', '').replace(/(\..*?)/g, '');
     var kelamin = $(":radio[name=kelamin]:checked").val();
-    totHarga = isNaN (totHarta)
+    totHarga = isNaN (totHarta) ? 0 : totHarta
     
     // Gender
     if(kelamin == 'Lelaki') {
