@@ -2,7 +2,7 @@
 
 function hitung() {
     // Jumlah Harta
-    var totHarta = document.getElementById('totHarta').value.replace('Rp', '').replace(/(\..*?)/g, '0');
+    var totHarta = parseInt(document.getElementById('totHarta').value.replace('Rp', '').replace(/(\..*?)/g, '0'));
     var kelamin = $(":radio[name=kelamin]:checked").val();
     totHarga = isNaN(totHarta) ? 0 : totHarta
     
